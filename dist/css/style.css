@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Ubuntu:300,500,700");
 .materialize-red {
   background-color: #e51c23 !important; }
 
@@ -6612,8 +6613,19 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
 @media (min-height: 40.125em) {
   .picker--time .picker__box {
     margin-bottom: 5em; } }
+#temp {
+  margin: 0;
+  display: initial;
+  -webkit-margin-before: 0em;
+  -webkit-margin-after: 0em;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+  font-size: 20vh;
+  font-weight: lighter; }
+
 body {
-  margin: auto; }
+  margin: auto;
+  font-family: 'ubuntu'; }
 
 body {
   -webkit-tap-highlight-color: none; }
@@ -6645,17 +6657,6 @@ ul {
   justify-content: center;
   align-items: center; }
 
-@media (max-width: 1280px) {
-  #section2 {
-    display: none; }
-
-  ul {
-    display: flex;
-    justify-content: center;
-    align-items: center; }
-
-  #slide2 {
-    display: initial; } }
 #input {
   width: 100%;
   display: inline-flex;
@@ -6665,7 +6666,14 @@ ul {
 .waves-light {
   border-radius: 40px;
   background: white;
-  color: #00796B; }
+  color: #00796B;
+  margin-top: 2vh; }
+
+.input-field {
+  margin-top: 5vh; }
+
+#slide1-1 {
+  width: 100%; }
 
 #bouton {
   width: 100%;
@@ -6673,5 +6681,141 @@ ul {
   display: flex;
   align-items: center;
   justify-content: center; }
+
+#icon_prefix {
+  margin-left: 0.2rem;
+  width: 55vh;
+  border-bottom: 2px solid white;
+  font-size: 2em;
+  color: white;
+  text-align: center; }
+
+#btntitle {
+  color: white; }
+
+#date {
+  font-size: 6vh;
+  font-family: 'Ubuntu';
+  font-weight: lighter;
+  color: rgba(255, 255, 255, 0.815);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  height: 8%;
+  position: relative;
+  margin-top: 2vh; }
+
+#infometeo {
+  position: relative;
+  width: 100%;
+  height: 70%; }
+
+#inutile {
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  float: right;
+  position: relative;
+  width: 45%;
+  height: 60vh; }
+
+#tempday {
+  float: left;
+  position: relative;
+  width: 55%;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  font-size: 20vh;
+  color: white; }
+
+.titre {
+  height: 50%;
+  margin: 0;
+  text-align: center;
+  color: white;
+  font-size: 3vh; }
+
+.int {
+  height: 50%;
+  margin: 0;
+  text-align: center;
+  color: white;
+  font-size: 3vh;
+  display: initial;
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+  -webkit-margin-start: 0;
+  -webkit-margin-end: 0;
+  position: relative;
+  float: right; }
+
+.tout {
+  margin-bottom: 5vh;
+  height: auto;
+  width: 100%;
+  justify-content: center;
+  text-align: center;
+  display: flex;
+  position: relative; }
+
+@media (max-width: 1280px) {
+  .int {
+    font-size: 2vh; }
+
+  .titre {
+    font-size: 2vh;
+    font-weight: bold; }
+
+  .tout {
+    margin: 0;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    position: relative;
+    width: 50%;
+    height: auto;
+    bottom: 12%; }
+
+  #infometeo {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 70%; }
+
+  #section2 {
+    display: none; }
+
+  ul {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+
+  #slide2 {
+    display: initial; }
+
+  #inutile {
+    flex-direction: initial;
+    flex-wrap: wrap;
+    width: 100%;
+    text-align: center;
+    float: initial;
+    position: relative;
+    width: 100%; }
+
+  #tempday {
+    float: initial;
+    position: relative;
+    width: auto;
+    height: auto;
+    font-size: 30vh;
+    color: white; } }
 
 /*# sourceMappingURL=style.css.map */
