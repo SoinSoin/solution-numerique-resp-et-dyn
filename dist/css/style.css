@@ -6669,7 +6669,8 @@ ul {
   width: 100%;
   display: inline-flex;
   align-items: center;
-  justify-content: center; }
+  justify-content: center;
+  margin-top: 4vh; }
 
 .waves-light {
   border-radius: 40px;
