@@ -1,15 +1,22 @@
 @import "materialize/materialize.scss";
 @import url('https://fonts.googleapis.com/css?family=Ubuntu:300,500,700');
+.section {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.material-icons {
+    color: white;
+}
+
 #temp {
-    margin: 0;
+    margin-right: 0.5em;
     display: initial;
     -webkit-margin-before: 0em;
     -webkit-margin-after: 0em;
     -webkit-margin-start: 0px;
     -webkit-margin-end: 0px;
-    font-size: 20vh;
+    font-size: 25vh;
     font-weight: lighter;
-
 }
 
 body {
@@ -66,7 +73,7 @@ ul {
     border-radius: 40px;
     background: white;
     color: #00796B;
-    margin-top: 2vh;
+    margin-top: 1±vh;
 }
 
 .input-field {
@@ -131,6 +138,7 @@ ul {
 }
 
 #tempday {
+    right: 1em;
     float: left;
     position: relative;
     width: 55%;
@@ -138,13 +146,13 @@ ul {
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    font-size: 20vh;
     color: white;
+    font-weight: lighter;
 }
 
 .titre {
     height: 50%;
-    margin:0;
+    margin: 0;
     text-align: center;
     color: white;
     font-size: 3vh;
@@ -164,31 +172,95 @@ ul {
     position: relative;
     float: right;
 }
-.tout{
-    margin-bottom:5vh;
-height: auto;
-width: 100%;
-justify-content: center;
-text-align: center;
-display:flex;
-position: relative;
+
+.tout {
+    left: 3em;
+    margin-bottom: 3vh;
+    height: auto;
+    width: 100%;
+    justify-content: start;
+    text-align: center;
+    display: flex;
+    position: relative;
 }
 
+#autourLl {
+    width: 90%;
+    height: 10%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
 
+#lat {
+    display: flex;
+    justify-content: flex-start;
+    float: right;
+    width: 65%;
+}
+
+#long {
+    display: flex;
+    justify-content: flex-start;
+    float: left;
+    width: 35%;
+}
+
+.fp-tableCell {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center
+}
+
+#ilong {
+    display: flex;
+}
+
+.map {
+    position: relative;
+    width: 80%;
+    height: 80%;
+}
+.btn:hover {
+    background-color: rgb(4, 199, 176);
+}
 
 @media (max-width:1280px) {
-    .int{
-        font-size:2vh;
+    .fp-tableCell {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
     }
-    .titre{
-        font-size:2vh;
+    #autourLl {
+        width: 90%;
+        height: 4%;
+        display: flex;
+        justify-content: flex-start;
+    }
+    .input-field {
+        margin-top: 8vh;}
+    #tempday {
+        right: 0;
+    }
+    .int {
+        font-size: 2.5vh;
         font-weight: bold;
     }
+    .titre {
+        font-size: 2.1vh;
+        
+    }
+    #temp {
+        margin: 0;
+        font-size: 20vh;
+    }
     .tout {
-        margin:0;
+        left: 0;
         justify-content: center;
         text-align: center;
-        display:flex;
+        display: flex;
         position: relative;
         width: 50%;
         height: auto;
@@ -215,7 +287,8 @@ position: relative;
         display: initial;
     }
     #inutile {
-        flex-direction: initial;    
+        margin-top: 1vh;
+        flex-direction: initial;
         flex-wrap: wrap;
         width: 100%;
         text-align: center;
@@ -226,10 +299,16 @@ position: relative;
     #tempday {
         float: initial;
         position: relative;
-        width: auto;
-        height: auto;
+        width: 100%;
+        height: 20vh;
         font-size: 30vh;
         color: white;
+        display: flex;
+        justify-content: center;
+    }
+    #date {
+        font-size: 3vh;
+        height: auto;
     } // #infometeo{
     //     position: relative;
     //     width: 100vh;
