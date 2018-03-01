@@ -1,9 +1,9 @@
 $(document).ready(function () {
-    // $('#fullpage').fullpage({
-    //     scrollBar: true,
-    //     slidesNavigation: true,
-    //     slidesNavPosition: 'bottom',
-    // });
+    $('#fullpage').fullpage({
+        scrollBar: true,
+        slidesNavigation: true,
+        slidesNavPosition: 'bottom',
+    });
 
     moment.locale('fr');
     $("#date").text(moment().format('LL'));
