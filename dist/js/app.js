@@ -8,7 +8,7 @@ $(document).ready(function () {
     moment.locale('fr');
     $("#date").text(moment().format('LL'));
 
-    $(".waves-light").on("click", function () {
+    $(".waves-light").on("touchstart click", function () {
         var city = $("#icon_prefix").val();
         if (city != ' ') {
             $.ajax({
