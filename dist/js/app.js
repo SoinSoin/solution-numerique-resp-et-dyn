@@ -1,4 +1,5 @@
 $(document).ready(function () {
+
     $('#fullpage').fullpage({
         scrollBar: true,
         slidesNavigation: true,
@@ -16,19 +17,20 @@ $(document).ready(function () {
                 type: "POST",
                 dataType: "json",
                 success: function (data) {
+                    $("#test").text("check").css("color","rgb(142, 206, 45)").show();
                     var toto = "http://api.openweathermap.org/data/2.5/weather?q=" + city + "&units=metric&lang=fr&APPID=1589f92cc7f59b3d3132a9cff49a2286";
                     var long = data.coord.lon;
                     var lat = data.coord.lat;
 
-                    $("#temp").text(parseInt(data.main.temp) + '°');
+                    $("#temp").text(parseInt(data.main.temp)+ '°' );
 
-                    $("#tmax").text(data.main.temp_max);
+                    $("#tmax").text(data.main.temp_max+ '°');
 
-                    $("#tmin").text(data.main.temp_min);
+                    $("#tmin").text(data.main.temp_min+ '°');
 
-                    $("#atm").text(data.main.pressure + ' Pa');
+                    $("#atm").text(data.main.pressure );
 
-                    $("#humid").text(data.main.humidity);
+                    $("#humid").text(data.main.humidity+ '%');
 
                     $("#vdt").text(data.wind.speed + ' km/h');
 
@@ -39,11 +41,20 @@ $(document).ready(function () {
                     var gmap = "<iframe src='https://www.google.com/maps/embed/v1/place?key=AIzaSyD-IlL_WgfCBymed2DbYWTivev3WaBHhZQ&q=" + lat + "," + long + "&zoom=16 &maptype=roadmap' width='100%' height='100%' frameborder='0'></iframe>";
                     $("#imap,#rmap").html(gmap);
 
+                },
+                error: function(){
+                    $("#test").text("clear").css("color","rgb(189, 53, 53)").show();
+                    $("#atm,#rlong,#rlat,#ilat,#ilong").text("0");
+                    $("#humid").text("0%");
+                    $("#vdt").text("0km/h");
+                    $("#temp,#tmin,#tmax").text("0°");
+                    $("#imap,#rmap").html("Erreur");
                 }
 
             });
 
         }
+    
 
 
     });
