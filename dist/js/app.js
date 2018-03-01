@@ -1,15 +1,14 @@
 $(document).ready(function () {
-    $('#fullpage').fullpage({
-        scrollBar: true,
-        slidesNavigation: true,
-        slidesNavPosition: 'bottom',
-    });
+    // $('#fullpage').fullpage({
+    //     scrollBar: true,
+    //     slidesNavigation: true,
+    //     slidesNavPosition: 'bottom',
+    // });
 
     moment.locale('fr');
     $("#date").text(moment().format('LL'));
 
     $(".waves-light").on("click", function () {
-
         var city = $("#icon_prefix").val();
         if (city != ' ') {
             $.ajax({
