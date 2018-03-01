@@ -13,12 +13,12 @@ $(document).ready(function () {
         var city = $("#icon_prefix").val();
         if (city != ' ') {
             $.ajax({
-                url: "http://api.openweathermap.org/data/2.5/weather?q=" + city + "&units=metric" + "&APPID=1589f92cc7f59b3d3132a9cff49a2286",
+                url: "https://api.openweathermap.org/data/2.5/weather?q=" + city + "&units=metric" + "&APPID=1589f92cc7f59b3d3132a9cff49a2286",
                 type: "POST",
                 dataType: "json",
                 success: function (data) {
                     $("#test").text("check").css("color","rgb(142, 206, 45)").show();
-                    var toto = "http://api.openweathermap.org/data/2.5/weather?q=" + city + "&units=metric&lang=fr&APPID=1589f92cc7f59b3d3132a9cff49a2286";
+                    var toto = "https://api.openweathermap.org/data/2.5/weather?q=" + city + "&units=metric&lang=fr&APPID=1589f92cc7f59b3d3132a9cff49a2286";
                     var long = data.coord.lon;
                     var lat = data.coord.lat;
 
