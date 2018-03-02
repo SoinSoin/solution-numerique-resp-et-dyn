@@ -1,16 +1,5 @@
 @import "materialize/materialize.scss";
 @import url('https://fonts.googleapis.com/css?family=Ubuntu:300,500,700');
-
-
-.container-up{
-    position: relative;
-height: 30%;
-display: inline-flex;
-flex-wrap: wrap;    
-align-items: flex-end;
-width:100%;
-}
-
 .section {
     padding-top: 0;
     padding-bottom: 0;
@@ -20,7 +9,7 @@ width:100%;
 }
 
 #temp {
-    margin-right: 0.2em;
+    margin-right: 0.5em;
     display: initial;
     -webkit-margin-before: 0em;
     -webkit-margin-after: 0em;
@@ -135,11 +124,10 @@ ul {
 #infometeo {
     position: relative;
     width: 100%;
-    height: 60%;
+    height: 70%;
 }
 
 #inutile {
-
     flex-direction: column;
     display: flex;
     align-items: center;
@@ -197,7 +185,6 @@ ul {
     text-align: center;
     display: flex;
     position: relative;
-    
 }
 
 #autourLl {
@@ -292,15 +279,13 @@ ul {
         font-size: 20vh;
         margin-left: 6vh;
     }
-   
     .tout {
         left: 0;
         justify-content: center;
         text-align: center;
         display: flex;
         position: relative;
-        width: 45%;
-        height: 0%;
+        width: 50%;
         height: auto;
         bottom: 12%;
     }
@@ -333,7 +318,6 @@ ul {
         float: initial;
         position: relative;
         width: 100%;
-        
     }
     #tempday {
         float: initial;
