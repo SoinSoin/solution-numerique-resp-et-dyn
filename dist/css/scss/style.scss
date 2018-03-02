@@ -168,7 +168,6 @@ ul {
 }
 
 .titre {
-    font-size: 2vh;
     font-weight: lighter;
     height: 50%;
     margin: 0;
@@ -297,9 +296,7 @@ ul {
         font-size: 20vh;
         margin-left: 6vh;
     }
-    html{
-        line-height: 0;
-    }
+   
     .tout {
         left: 0;
         justify-content: center;
@@ -332,7 +329,7 @@ ul {
         display: initial;
     }
     #inutile {
-        margin-top: 2vh;
+        margin-top: 1vh;
         flex-direction: initial;
         flex-wrap: wrap;
         width: 100%;
@@ -343,7 +340,6 @@ ul {
         
     }
     #tempday {
-        margin-top: 2vh;
         float: initial;
         position: relative;
         width: 100%;
