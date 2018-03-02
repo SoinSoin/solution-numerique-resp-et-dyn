@@ -1,17 +1,22 @@
 $(document).ready(function () {
 
+    //fonction permettant l'utilisation de fullpage
+
     $('#fullpage').fullpage({
         scrollBar: true,
         slidesNavigation: true,
         slidesNavPosition: 'bottom',
     });
-
+//plugin de la date
     moment.locale('fr');
     $("#date").text(moment().format('LL'));
 
+
+    //la c'est le bouton qui enclenche l'ajax
     $(".waves-light").on("touchstart click", function () {
         var city = $("#icon_prefix").val();
         if (city != ' ') {
+            //ajax qui s'execute avec une condition du champs vide
             $.ajax({
                 url: "https://api.openweathermap.org/data/2.5/weather?q=" + city + "&units=metric" + "&APPID=1589f92cc7f59b3d3132a9cff49a2286",
                 type: "POST",
@@ -42,6 +47,7 @@ $(document).ready(function () {
                     $("#imap,#rmap").html(gmap);
 
                 },
+                //en cas d'erreur
                 error: function(){
                     $("#test").text("clear").css("color","rgb(189, 53, 53)").show();
                     $("#atm,#rlong,#rlat,#ilat,#ilong").text("0");
