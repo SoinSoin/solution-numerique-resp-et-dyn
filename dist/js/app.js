@@ -22,6 +22,7 @@ $(document).ready(function () {
                 type: "POST",
                 dataType: "json",
                 success: function (data) {
+                    console.log(data)
                     $("#test").text("check").css("color","rgb(142, 206, 45)").show();
                     var toto = "https://api.openweathermap.org/data/2.5/weather?q=" + city + "&units=metric&lang=fr&APPID=1589f92cc7f59b3d3132a9cff49a2286";
                     var long = data.coord.lon;
